@@ -7,10 +7,7 @@ const ColorPalette = ({ palette, name }: { palette: Record<string, string>; name
     <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
       {Object.entries(palette).map(([shade, hex]) => (
         <div key={shade} className="space-y-2">
-          <div
-            className="h-16 w-full rounded-lg border border-border"
-            style={{ backgroundColor: hex }}
-          />
+          <div className="h-16 w-full rounded-lg border border-border" style={{ backgroundColor: hex }} />
           <div className="text-sm">
             <p className="font-medium">{shade}</p>
             <p className="text-muted-foreground font-mono text-xs">{hex}</p>

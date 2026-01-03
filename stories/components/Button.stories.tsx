@@ -364,7 +364,9 @@ export const ThemeShowcase: Story = {
 
       <div className="space-y-2">
         <h3 className="text-lg font-semibold">Secondary Actions (Gray)</h3>
-        <p className="text-sm text-muted-foreground">Secondary buttons use neutral gray colors for less prominent actions.</p>
+        <p className="text-sm text-muted-foreground">
+          Secondary buttons use neutral gray colors for less prominent actions.
+        </p>
         <div className="flex gap-2">
           <Button variant="secondary">Learn More</Button>
           <Button variant="outline">View Details</Button>

@@ -7,7 +7,17 @@
  * @file D:/009_Projects_AI/Personal_Projects/Turbocat/turbocat-agent/__tests__/design-tokens.test.ts
  */
 
-import { colors, typography, spacing, borderRadius, shadows, animations, zIndex, breakpoints, theme } from '@/lib/design-tokens'
+import {
+  colors,
+  typography,
+  spacing,
+  borderRadius,
+  shadows,
+  animations,
+  zIndex,
+  breakpoints,
+  theme,
+} from '@/lib/design-tokens'
 
 /**
  * Test 1: colors.orange[500] equals '#f97316'
@@ -72,7 +82,40 @@ export const testTypographyFontFamilySans = (): boolean => {
  * The spacing scale should include all the expected spacing values from 0 to 64.
  */
 export const testSpacingScaleKeys = (): boolean => {
-  const expectedKeys = ['0', 'px', '0.5', '1', '1.5', '2', '2.5', '3', '3.5', '4', '5', '6', '7', '8', '9', '10', '11', '12', '14', '16', '20', '24', '28', '32', '36', '40', '44', '48', '52', '56', '60', '64']
+  const expectedKeys = [
+    '0',
+    'px',
+    '0.5',
+    '1',
+    '1.5',
+    '2',
+    '2.5',
+    '3',
+    '3.5',
+    '4',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9',
+    '10',
+    '11',
+    '12',
+    '14',
+    '16',
+    '20',
+    '24',
+    '28',
+    '32',
+    '36',
+    '40',
+    '44',
+    '48',
+    '52',
+    '56',
+    '60',
+    '64',
+  ]
   const actualKeys = Object.keys(spacing)
 
   const hasAllExpectedKeys = expectedKeys.every((key) => actualKeys.includes(key))
@@ -113,7 +156,16 @@ export const testAllExportsAvailable = (): boolean => {
  * Additional Test: Verify theme object combines all tokens
  */
 export const testThemeObjectComplete = (): boolean => {
-  const expectedKeys = ['colors', 'typography', 'spacing', 'borderRadius', 'shadows', 'animations', 'zIndex', 'breakpoints']
+  const expectedKeys = [
+    'colors',
+    'typography',
+    'spacing',
+    'borderRadius',
+    'shadows',
+    'animations',
+    'zIndex',
+    'breakpoints',
+  ]
   const actualKeys = Object.keys(theme)
 
   const hasAllKeys = expectedKeys.every((key) => actualKeys.includes(key))
@@ -132,7 +184,14 @@ export const testThemeObjectComplete = (): boolean => {
 export const runAllDesignTokenTests = (): void => {
   console.group('Design Tokens Tests')
 
-  const tests = [testOrange500Color, testBlue500Color, testTypographyFontFamilySans, testSpacingScaleKeys, testAllExportsAvailable, testThemeObjectComplete]
+  const tests = [
+    testOrange500Color,
+    testBlue500Color,
+    testTypographyFontFamilySans,
+    testSpacingScaleKeys,
+    testAllExportsAvailable,
+    testThemeObjectComplete,
+  ]
 
   const results = tests.map((test) => test())
   const passed = results.filter(Boolean).length

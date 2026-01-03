@@ -6,12 +6,7 @@ const config: StorybookConfig = {
     '../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)',
     '../components/**/*.stories.@(js|jsx|mjs|ts|tsx)',
   ],
-  addons: [
-    '@storybook/addon-onboarding',
-    '@storybook/addon-docs',
-    '@storybook/addon-a11y',
-    '@storybook/addon-themes',
-  ],
+  addons: ['@storybook/addon-onboarding', '@storybook/addon-docs', '@storybook/addon-a11y', '@storybook/addon-themes'],
   framework: {
     name: '@storybook/nextjs',
     options: {},

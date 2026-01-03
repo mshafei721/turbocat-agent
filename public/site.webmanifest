@@ -1,6 +1,7 @@
 {
-    "name": "Coding Agent Platform",
-    "short_name": "Coding Agent Platform",
+    "name": "Turbocat",
+    "short_name": "Turbocat",
+    "description": "AI-powered coding agent for supercharged development",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,7 +14,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#000000",
+    "theme_color": "#f97316",
+    "background_color": "#0a0a0a",
     "display": "standalone"
 }
